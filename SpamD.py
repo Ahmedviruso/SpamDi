@@ -36,6 +36,7 @@ def Join(Invite,Token):
             print("Ok ({})".format(R.status_code))
         else:
             print("Not Ok (Server Response {})".format(R.status_code) )
+            time.sleep(3)
     except:
         print("An error occurred during function execution")
         exit()
@@ -53,10 +54,11 @@ def Spam_M(Channel,Token):
         if(Rs == 200):
             print("Ok ({})".format(Rs))
         elif(Rs == 429):
-            print("Too Many Requests , Sleep(3)")
-            time.sleep(2)
+            print("{} Too Many Requests , Sleep(3)".format(Rs) )
+            time.sleep(3)
         else:
             print("Not Ok [Server Response {}]".format(Rs) )
+            time.sleep(3)
     except:
         print("An error occurred during function execution")
         exit()
@@ -76,6 +78,7 @@ def Spam_E(Channel,Message,Token):
             print("Ok")
         else:
             print("Not Ok , Sleep(3) [Put Emoji Response ({})] [Delete Emoji Response ({})]".format(Frist,Second) )
+            time.sleep(3)
     except:
         print("An error occurred during function execution")
         exit()

@@ -10,7 +10,7 @@ try:
 except:
     Lib = ("requests")
 
-if len(Lib) > 0:
+if (len(Lib) > 0):
     print("Trying to install requests library.")
 
     Response = os.system('{} -m pip install -U '.format(sys.executable) + Lib + " -q")

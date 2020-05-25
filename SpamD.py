@@ -54,7 +54,7 @@ def Spam_M(Channel,Token):
         if(Rs == 200):
             print("Ok ({})".format(Rs))
         elif(Rs == 429):
-            print("{} Too Many Requests , Sleep(3)".format(Rs) )
+            print("Too Many Requests , Sleep(3)")
             time.sleep(3)
         else:
             print("Not Ok [Server Response {}]".format(Rs) )

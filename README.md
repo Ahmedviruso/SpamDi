@@ -8,7 +8,7 @@ SpamD is an Python 3 libray thats allow you to do spam in discord with multiples
 
 2- Import SpamD library to your python file.
 
-## Examples For All Functions
+## Examples:
 
 **Join Server:**
 

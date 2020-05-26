@@ -8,12 +8,11 @@ try:
     import requests
     from requests.packages.urllib3.exceptions import InsecureRequestWarning
 except:
-    Lib = ("requests")
+    Lib = ("False")
 
-if (len(Lib) > 0):
+if (Lib == "False"):
     print("Trying to install requests library.")
-
-    Response = os.system('{} -m pip install -U '.format(sys.executable) + Lib + " -q")
+    Response = os.system('{} -m pip install -U '.format(sys.executable) + "requests" + " -q")
 
     if (Response != 0):
         sys.exit("Couldn't Install The Library.")
@@ -35,7 +34,7 @@ def Join(Invite,Token):
         if(R.status_code == 200):
             print("Ok ({})".format(R.status_code))
         else:
-            print("Not Ok (Server Response {})".format(R.status_code) )
+            print("Not Ok [Server Response {}]".format(R.status_code) )
             time.sleep(3)
     except:
         print("An error occurred during function execution")

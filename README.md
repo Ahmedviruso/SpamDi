@@ -1,12 +1,12 @@
 # SpamD
 
-SpamD is an Python 3 libray thats allow you to do spam in discord with multiples accounts.
+SpamD is an Python 3 library that's allow you to do spam in discord using multiples accounts.
 
 ## How To Use
 
-1- Download the file (library), and put it in the same location of your python file.
+1- Download the file , and put it in the same location of your python file.
 
-2- Import SpamD library to your python file.
+2- Import library to your python file.
 
 ## Examples:
 

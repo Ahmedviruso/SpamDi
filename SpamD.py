@@ -8,9 +8,9 @@ try:
     import requests
     from requests.packages.urllib3.exceptions import InsecureRequestWarning
 except:
-    Lib = ("False")
+    Lib = False
 
-if (Lib == "False"):
+if (Lib == False):
     print("Trying to install requests library.")
     Response = os.system('{} -m pip install -U '.format(sys.executable) + "requests" + " -q")
 
@@ -57,7 +57,7 @@ def Spam_M(Channel,Token):
             time.sleep(3)
         else:
             print("Not Ok [Server Response {}]".format(Rs) )
-            time.sleep(3)
+            time.sleep(2)
     except:
         print("An error occurred during function execution")
         exit()
@@ -76,8 +76,8 @@ def Spam_E(Channel,Message,Token):
         if(Frist + Second == 408):
             print("Ok")
         else:
-            print("Not Ok , Sleep(3) [Put Emoji Response ({})] [Delete Emoji Response ({})]".format(Frist,Second) )
-            time.sleep(3)
+            print("Not Ok , Sleep(2) [Put Emoji Response ({})] [Delete Emoji Response ({})]".format(Frist,Second) )
+            time.sleep(2)
     except:
         print("An error occurred during function execution")
         exit()

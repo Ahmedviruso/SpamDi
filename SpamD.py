@@ -15,7 +15,7 @@ if (Lib == False):
     Response = os.system('{} -m pip install -U '.format(sys.executable) + "requests" + " -q")
 
     if (Response != 0):
-        sys.exit("Couldn't Install The Library.")
+        sys.exit("Couldn't Install The requests Library, Please Install it Manually.")
     else:
         print("Done.")
         import requests
@@ -30,7 +30,7 @@ def Headers(Pr):
 
 def Join(Invite,Token):
     try:
-        R = requests.post("https://discordapp.com/api/v6/invites/{}".format(Invite),headers=Headers(Token) ,verify=False)
+        R = requests.post(Domain + "/api/v6/invites/{}".format(Invite),headers=Headers(Token) ,verify=False)
         if(R.status_code == 200):
             print("Ok ({})".format(R.status_code))
         else:

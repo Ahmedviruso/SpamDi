@@ -1,4 +1,4 @@
-# SpamD Library v0.1 By AhmedViruso
+# SpamDi Library v0.1 By AhmedViruso
 
 import random,string,random,time,os,sys
 

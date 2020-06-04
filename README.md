@@ -1,6 +1,6 @@
-# SpamD
+# SpamDi
 
-SpamD is an Python 3 library that's allow you to do spam in discord using multiples accounts.
+SpamDi is an Python 3 library that's allow you to do spam in discord using multiples accounts.
 
 ## How To Use
 
@@ -13,28 +13,28 @@ SpamD is an Python 3 library that's allow you to do spam in discord using multip
 **Join Server:**
 
 ```py
-import SpamD
+import SpamDi
 
-SpamD.Join("Invite_Code","Authorization")
+SpamDi.Join("Invite_Code","Authorization")
 ```
 
 **Spam Messages:**
 
 ```py
-import SpamD
+import SpamDi
 
 while True:
-    SpamD.Spam_M("Channel_Id","Authorization")
+    SpamDi.Spam_M("Channel_Id","Authorization")
 
 ```
 
 **Spam Reactions:**
 
 ```py
-import SpamD
+import SpamDi
 
 while True:
-    SpamD.Spam_E("Channel_Id","Message_Id","Authorization")
+    SpamDi.Spam_E("Channel_Id","Message_Id","Authorization")
 
 ```
 
